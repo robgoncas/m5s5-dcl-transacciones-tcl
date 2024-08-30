@@ -1,0 +1,25 @@
+//comienza la transaccion
+BEGIN;
+
+- comandos de creacion
+empresa
+clientes
+herramientas
+arriendos
+
+SAVEPOINT A;
+//RIESGO DE FALLOS O INCONSISTENCIA
+//CONSULTANDO BASES DE DATOS EXTERNAS 
+//FORMULAS CON RIESGO DE TIMEOUT/DISPONIBILIDAD
+//DEPENDENCIA DE COMANDOS (RESTANDO A LA CUENTA A + SUMARLE A LACUENTA B) 
+
+- comando de insercion , pueblo la base de datos
+empresa
+clientes
+herramientas
+arriendos
+
+ROLLBACK A;
+
+//termina transaccion
+COMMIT;
